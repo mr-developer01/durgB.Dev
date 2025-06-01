@@ -8,7 +8,7 @@ const PersonalInfo = () => (
       />
       <h2 className="text-rajul-3xl font-bold mb-2">Rahul</h2>
       <p className="text-lg text-gray-600 mb-4">
-        25 years old | medium brown | 5'6"
+        25 years old | Medium Brown | 5'6"
       </p>
       <p className="text-gray-700 max-w-2xl mx-auto">
         A passionate and driven individual looking for a life partner who shares
