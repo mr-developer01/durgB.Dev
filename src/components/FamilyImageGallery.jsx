@@ -33,8 +33,8 @@ const FamilyImageGallery = () => {
                 alt={image.caption}
                 className="w-full h-full object-cover object-center rounded-lg shadow-md"
               />
-              <div className="absolute inset-0 bg-black opacity-35 bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center rounded-lg">
-                <p className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 w-full h-12 bg-black hover:blur-[1px] flex items-center justify-center rounded-t-lg">
+                <p className="text-white text-2xl text-center transition-opacity duration-300">
                   {image.caption}
                 </p>
               </div>

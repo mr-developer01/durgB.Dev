@@ -7,12 +7,14 @@ const PersonalInfo = () => (
         className="h-[600px] mx-auto mb-6 border-4 border-amber-900 rounded-xl"
       />
       <h2 className="text-rajul-3xl font-bold mb-2">Rahul</h2>
-      <p className="text-lg text-gray-600 mb-4">
-        25 years old | Medium Brown | 5'6"
+      <p className="text-lg text-gray-600 mb-2">
+        25 years | Medium Brown | 5'6"
       </p>
       <p className="text-gray-700 max-w-2xl mx-auto">
-        A passionate and driven individual looking for a life partner who shares
-        similar values and aspirations.
+        Ziradei Indra Awash Surwal, Siwan, Bihar - 841245
+      </p>
+      <p className="text-gray-700 max-w-2xl mx-auto">
+        +91 87097 06893, +91 80027 77777
       </p>
     </div>
   </section>

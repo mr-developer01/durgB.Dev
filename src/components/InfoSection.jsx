@@ -9,6 +9,14 @@ const InfoSection = ({ title, details }) => (
             <span className="text-gray-600">{detail.value}</span>
           </div>
         ))}
+        {title === "Education" && (
+          <a
+            href="https://drive.google.com/drive/folders/1jbb5KoVn_FkBJlWeKvb471e_Vxq8y5Ue"
+            className="text-blue-500 hover:underline border-2 rounded-lg px-4 py-2 inline-block mt-4 transition-colors duration-300 hover:bg-blue-100 hover:border-blue-400 hover:text-blue-700"
+          >
+            See Docs
+          </a>
+        )}
       </div>
     </div>
   </section>

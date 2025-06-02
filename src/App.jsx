@@ -34,27 +34,26 @@ function App() {
       label: "Institution",
       value: "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
     },
-    { label: "Year of Graduation", value: "2023" },
-    {
-      label: "Additional Certifications",
-      value: "Full Stack Development",
-    },
+    { label: "Year of Graduation", value: "2023" }
   ];
 
   const occupationDetails = [
     { label: "Profession", value: "Software Engineer" },
     { label: "Company", value: "AppsTec ERP Solutions" },
-    { label: "Location", value: "Bangalore, India" },
-    { label: "Experience", value: "Intern" },
+    { label: "Location", value: "Bangalore, India" }
   ];
 
   const familyDetails = [
     { label: "Family Type", value: "Joint" },
+    { label: "Grand Paa", value: "Shree Rama Jee Manjhi" },
+    { label: "Grand Father's Occupation", value: "Retired Policeman" },
+    { label: "Father", value: "Shree Bishwambhar Manjhi" },
     { label: "Father's Occupation", value: "SI - Bihar Police" },
+    { label: "Mother", value: "Durgavati Devi" },
     { label: "Mother's Occupation", value: "Homemaker" },
     { label: "Sister", value: "Pratibha (Married)" },
     { label: "Brother", value: "Kunal" },
-    { label: "Family Values", value: "Moderate, value education and respect" },
+    { label: "Family Values", value: "Moderate, value education and respect." },
   ];
 
   return (
@@ -62,6 +61,7 @@ function App() {
       {isLoaded ? (
         <div className="bg-gray-300 min-h-screen">
           <Header />
+          {/* <a href="https://drive.google.com/drive/folders/1jbb5KoVn_FkBJlWeKvb471e_Vxq8y5Ue">Docs</a> */}
           <PersonalInfo />
           <InfoSection title="Education" details={educationDetails} />
           <InfoSection title="Occupation" details={occupationDetails} />
