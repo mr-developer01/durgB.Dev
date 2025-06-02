@@ -1,12 +1,33 @@
+import { lazy, Suspense, useState, useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import PersonalInfo from "./components/PersonalInfo";
-import InfoSection from "./components/InfoSection";
-import PersonalImageCarousel from "./components/PersonalImageCarousel";
-import FamilyImageGallery from "./components/FamilyImageGallery";
-import Footer from "./components/Footer";
+
+// Lazy load all components
+const Header = lazy(() => import("./components/Header"));
+const PersonalInfo = lazy(() => import("./components/PersonalInfo"));
+const InfoSection = lazy(() => import("./components/InfoSection"));
+const PersonalImageCarousel = lazy(() => import("./components/PersonalImageCarousel"));
+const FamilyImageGallery = lazy(() => import("./components/FamilyImageGallery"));
+const Footer = lazy(() => import("./components/Footer"));
+
+// Simple Loader component
+const Loader = () => (
+  <div className="flex justify-center items-center h-screen bg-black">
+    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
+  </div>
+);
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  // Simulate 5-second delay
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 5000);
+
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
+
   const educationDetails = [
     { label: "Degree", value: "B.Tech in Computer Science" },
     {
@@ -37,16 +58,22 @@ function App() {
   ];
 
   return (
-    <div>
-      <Header />
-      <PersonalInfo />
-      <InfoSection title="Education" details={educationDetails} />
-      <InfoSection title="Occupation" details={occupationDetails} />
-      <PersonalImageCarousel />
-      <InfoSection title="Family Details" details={familyDetails} />
-      <FamilyImageGallery />
-      <Footer />
-    </div>
+    <Suspense fallback={<Loader />}>
+      {isLoaded ? (
+        <div className="bg-gray-300 min-h-screen">
+          <Header />
+          <PersonalInfo />
+          <InfoSection title="Education" details={educationDetails} />
+          <InfoSection title="Occupation" details={occupationDetails} />
+          <PersonalImageCarousel />
+          <InfoSection title="Family Details" details={familyDetails} />
+          <FamilyImageGallery />
+          <Footer />
+        </div>
+      ) : (
+        <Loader />
+      )}
+    </Suspense>
   );
 }
 
