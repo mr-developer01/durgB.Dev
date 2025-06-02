@@ -1,19 +1,20 @@
+
 const FamilyImageGallery = () => {
   const images = [
     {
-      src: "https://plus.unsplash.com/premium_photo-1682439177734-07d628bc4917?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "./papa.jpg",
       caption: "Father",
     },
     {
-      src: "https://images.unsplash.com/photo-1542037179399-bbf09c7f9888?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "mom.JPG",
       caption: "Mother",
     },
     {
-      src: "https://plus.unsplash.com/premium_photo-1681493353999-a3eea8b95e1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "sister.jpg",
       caption: "Sister",
     },
     {
-      src: "https://images.unsplash.com/photo-1586188389405-bd05314a47ac?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "kunal.jpg",
       caption: "Brother",
     },
   ];
