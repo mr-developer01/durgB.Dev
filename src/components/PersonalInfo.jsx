@@ -14,7 +14,7 @@ const PersonalInfo = () => (
         Ziradei Indra Awash Surwal, Siwan, Bihar - 841245
       </p>
       <p className="text-gray-700 max-w-2xl mx-auto">
-        +91 87097 06893, +91 80027 777594
+        +91 87097 06893, +91 80027 77594
       </p>
     </div>
   </section>
