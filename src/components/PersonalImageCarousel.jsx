@@ -14,14 +14,14 @@ const PersonalImageCarousel = () => {
       src: "r3.jpeg",
       caption: "03",
     },
-    {
-      src: "e.JPG",
-      caption: "04",
-    },
-    {
-      src: "f.JPG",
-      caption: "05",
-    },
+    // {
+    //   src: "e.JPG",
+    //   caption: "04",
+    // },
+    // {
+    //   src: "f.JPG",
+    //   caption: "05",
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
