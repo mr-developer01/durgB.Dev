@@ -2,7 +2,7 @@ const PersonalInfo = () => (
   <section className="bg-gray-100 py-12">
     <div className="container mx-auto px-4 text-center">
       <img
-        src="g.JPG"
+        src="rahul_main.jpeg"
         alt="Profile"
         className="h-[600px] mx-auto mb-6 border-4 border-amber-900 rounded-xl"
       />

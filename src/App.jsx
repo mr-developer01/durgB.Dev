@@ -61,7 +61,6 @@ function App() {
       {isLoaded ? (
         <div className="bg-gray-300 min-h-screen">
           <Header />
-          {/* <a href="https://drive.google.com/drive/folders/1jbb5KoVn_FkBJlWeKvb471e_Vxq8y5Ue">Docs</a> */}
           <PersonalInfo />
           <InfoSection title="Education" details={educationDetails} />
           <InfoSection title="Occupation" details={occupationDetails} />

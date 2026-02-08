@@ -3,15 +3,15 @@ import { useState } from "react";
 const PersonalImageCarousel = () => {
   const images = [
     {
-      src: "a.JPG",
+      src: "r1.jpeg",
       caption: "01",
     },
     {
-      src: "b.JPG",
+      src: "r2.jpeg",
       caption: "02",
     },
     {
-      src: "c.JPG",
+      src: "r3.jpeg",
       caption: "03",
     },
     {
